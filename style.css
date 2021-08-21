@@ -1,0 +1,131 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to right, #222, #ddd, #222);
+}
+
+.picholderBox {
+    position: relative;
+    background-image: linear-gradient(to right, #ddd, #222, #ddd);
+    margin: auto;
+    margin-top: 100px;
+    width: 750px;
+    height: 350px;
+    box-shadow: 0 5px 5px 10px #222;
+}
+
+.picBox {
+    position: relative;
+    min-width: 100px;
+    max-width: 700px;
+    height: 100%;
+    margin: auto;
+}
+
+.infoBox {
+    position: absolute;
+    bottom: 0px;
+    background-color: black;
+    opacity: 0.8;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+#arrL {
+    position: absolute;
+    opacity: 0.65;
+    left: 3px;
+    top: 170px;
+}
+#arrR {
+    position: absolute;
+    opacity: 0.65;
+    right: 3px;
+    top: 170px;
+    transform: rotate(0.5turn);
+}
+#arrLdiv {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 350px;       /* A két nyíldiv közötti kis térrész biztosítja, hogy a képet könnyen le lehessen tölteni és a választott irány egyértelműbben térjen el a közepétől.*/
+    height: 100%;
+}
+#arrRdiv {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 350px;
+    height: 100%;
+}
+#arrLdiv:hover #arrL {
+    opacity: 1;
+}
+#arrRdiv:hover #arrR {
+    opacity: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+    height: 100px;
+}
+  
+.navPicHolder {
+    position: relative;
+    background-color: #ddd;      /* csak teszt-hez, utána törlendő */
+    border-radius: 3px;
+    width: 60px;
+    height: 60px;
+}
+.navPicHolder:hover {
+    background-color: #999;
+}
+.navPicHolderCurrent {
+    box-shadow: 0 0px 5px 8px #222;
+}
+
+.navPic {
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    margin: 10px 20px;
+    margin-bottom: 0px;
+    font-family: 'Audiowide', cursive;
+    color: white;
+}
+p {
+    margin: 10px 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+#pic {
+    width: 700px;
+    height: 350px;
+}
+
+.popupBox {
+    display: none;
+    position: absolute;
+    background: #111;
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+    top: 60px;
+}
+
+.navPicHolder:hover .popupBox {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    color: #ddd;
+    box-shadow: 0 0px 5px 8px #222;
+}

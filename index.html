@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Az első webalkalmazásom</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- főblokk -->
+    <div class="picholderBox">
+        <div class="picBox">
+            <img id="pic"> 
+            <!-- <img id="pic" src="./images/21__01__pexels-brian-60093.jpg" alt="Kaktusz 01"> -->
+            <!-- áttetsző felirat -->
+            <div class="infoBox">
+                <h1 id="picTitle"></h1> <!-- Árvíztűrő tükörfúrógép -->
+                <p id="picDescription"></p>
+            </div>
+        </div>
+        <div id="arrLdiv">
+            <img src="./icon/arrow.svg" alt="balra" id="arrL">
+        </div>
+        <div id="arrRdiv">
+            <img src="./icon/arrow.svg" alt="jobbra" id="arrR">
+        </div>
+    </div>
+    <!-- alblokk -->
+    <nav>
+        <!--
+        <div class="navPicHolder" data-index="0">
+            <img class="navPic" src="./thumbnails/T21__01__pexels-brian-60093.jpg" alt="Kaktusz 01" data-index="0">
+            <div class="popupBox">Az indiánok...</div>
+        </div>
+        -->
+    </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
+<!-- tested: Firefox 91.0.1 (64 bit, Linux) - OK -->
+<!-- tested: Chromium 92.0.4515.159 (64 bit, Linux) - OK -->
